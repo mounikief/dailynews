@@ -3,39 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Internationale Nachrichten - 02.11.2025</title>
+<title>Nachrichten - 02.11.2025</title>
 <style>
+:root{--primary:#667eea;--secondary:#764ba2;--success:#00d4aa;--warning:#ffc107;--dark:#2c3e50;--gray:#7f8c8d;--light:#f8f9fa}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:20px;min-height:100vh}
-.container{max-width:1200px;margin:0 auto;background:white;padding:40px;border-radius:15px;box-shadow:0 10px 40px rgba(0,0,0,0.2)}
-h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.nav-buttons{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0;padding:20px;background:#f8f9fa;border-radius:10px}
-.nav-btn{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;transition:all 0.3s;border:none;cursor:pointer;font-size:1em}
-.nav-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,0.4)}
-.badge{display:inline-block;background:#ecf0f1;color:#7f8c8d;padding:5px 10px;border-radius:5px;font-size:0.8em;margin:5px 5px 20px 0}
-.top-section{background:#fff3cd;padding:25px;border-radius:10px;margin:30px 0;border-left:5px solid #ffc107;scroll-margin-top:20px}
-.top-section h2{color:#856404;margin-bottom:15px}
-.stats{background:#f8f9fa;padding:15px;border-radius:10px;margin:20px 0}
-.topic{margin-bottom:50px;scroll-margin-top:20px}
-.topic h2{color:#2980b9;border-bottom:3px solid #667eea;padding-bottom:10px;margin-bottom:20px}
-.article{background:#f8f9fa;padding:20px;margin:15px 0;border-radius:10px;border-left:4px solid #667eea;transition:all 0.3s}
-.article:hover{transform:translateX(5px);box-shadow:0 5px 15px rgba(102,126,234,0.3)}
-.article h3{font-size:1.2em;margin-bottom:10px}
-.article h3 a{color:#2c3e50;text-decoration:none}
-.article h3 a:hover{color:#667eea}
-.meta{color:#7f8c8d;font-size:0.9em}
-.count{background:#667eea;color:white;padding:5px 15px;border-radius:20px;margin-left:10px}
-.fresh{background:#27ae60;color:white;padding:3px 10px;border-radius:5px;font-size:0.8em;margin-left:10px}
-.back-to-top{position:fixed;bottom:30px;right:30px;background:#667eea;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.3);transition:all 0.3s}
-.back-to-top:hover{background:#764ba2;transform:translateY(-3px)}
-@media (max-width:768px){.nav-buttons{flex-direction:column} .nav-btn{width:100%}}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);background-attachment:fixed;padding:20px;min-height:100vh;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;background:white;padding:50px;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+header{text-align:center;margin-bottom:40px;padding-bottom:30px;border-bottom:2px solid var(--light)}
+h1{color:var(--dark);font-size:3em;font-weight:800;margin-bottom:15px;background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-1px}
+.subtitle{color:var(--gray);font-size:1.1em}
+.nav-buttons{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0;padding:25px;background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);border-radius:15px}
+.nav-btn{background:linear-gradient(135deg,var(--primary) 0%,#5568d3 100%);color:white;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.95em;transition:all 0.3s;box-shadow:0 4px 15px rgba(102,126,234,0.4)}
+.nav-btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(102,126,234,0.5)}
+.badge{display:inline-block;background:var(--light);color:var(--gray);padding:8px 14px;border-radius:20px;font-size:0.85em;margin:5px;border:1px solid #e0e0e0;transition:all 0.3s}
+.badge:hover{background:var(--primary);color:white;transform:scale(1.05)}
+.top-section{background:linear-gradient(135deg,#fff3cd 0%,#ffe9a6 100%);padding:35px;border-radius:15px;margin:40px 0;border-left:6px solid var(--warning);box-shadow:0 10px 30px rgba(255,193,7,0.2);scroll-margin-top:100px}
+.top-section h2{color:#856404;margin-bottom:20px;font-size:2em;font-weight:700}
+.stats{background:linear-gradient(135deg,var(--light) 0%,#e9ecef 100%);padding:20px 25px;border-radius:12px;margin:30px 0;text-align:center;font-size:1.1em;border:2px solid #dee2e6}
+.stats strong{color:var(--primary);font-size:1.8em;font-weight:800}
+.topic{margin-bottom:60px;scroll-margin-top:100px}
+.topic h2{color:var(--dark);border-bottom:4px solid var(--primary);padding-bottom:15px;margin-bottom:25px;font-size:2em;font-weight:700;display:flex;align-items:center;justify-content:space-between}
+.article{background:white;padding:25px;margin:20px 0;border-radius:12px;border-left:5px solid var(--primary);transition:all 0.3s;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+.article:hover{transform:translateX(8px);box-shadow:0 10px 30px rgba(102,126,234,0.2);border-left-color:var(--secondary)}
+.article h3{font-size:1.3em;margin-bottom:12px;line-height:1.4;font-weight:600}
+.article h3 a{color:var(--dark);text-decoration:none;transition:color 0.3s}
+.article h3 a:hover{color:var(--primary)}
+.meta{color:var(--gray);font-size:0.9em;display:flex;gap:15px;flex-wrap:wrap}
+.count{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);color:white;padding:6px 18px;border-radius:25px;font-size:0.9em;font-weight:600;box-shadow:0 3px 10px rgba(102,126,234,0.3)}
+.fresh{background:linear-gradient(135deg,var(--success) 0%,#00b894 100%);color:white;padding:4px 12px;border-radius:15px;font-size:0.75em;font-weight:700;margin-left:10px;box-shadow:0 2px 8px rgba(0,212,170,0.3)}
+.back-to-top{position:fixed;bottom:30px;right:30px;background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 8px 25px rgba(102,126,234,0.4);transition:all 0.3s;z-index:1000}
+.back-to-top:hover{transform:translateY(-5px);box-shadow:0 12px 35px rgba(102,126,234,0.5)}
+footer{margin-top:60px;padding-top:30px;border-top:2px solid var(--light);text-align:center;color:var(--gray)}
+@media (max-width:768px){.container{padding:30px 20px} h1{font-size:2em} .nav-buttons{flex-direction:column} .nav-btn{width:100%} .topic h2{font-size:1.5em;flex-direction:column;align-items:flex-start;gap:10px}}
 </style>
 </head>
 <body>
 <div class="container">
+<header>
 <h1 id="top">📰 Internationale Nachrichten</h1>
-<p style="color:#7f8c8d;margin:10px 0 20px">Aktualisiert: 02.11.2025 14:09 Uhr</p>
-
+<p class="subtitle">Aktualisiert: 02.11.2025 16:01 Uhr</p>
+</header>
 <div class="nav-buttons">
 <a href="#top-headlines" class="nav-btn">⭐ Top Schlagzeilen</a>
 <a href="#gaza" class="nav-btn">🔴 Gaza Krieg</a>
@@ -43,430 +51,4 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 <a href="#ki" class="nav-btn">🤖 KI & Rechenzentren</a>
 <a href="#deutschland" class="nav-btn">🇩🇪 Deutschland</a>
 </div>
-<span class="badge">AP News</span><span class="badge">Reuters</span><span class="badge">BBC News</span><span class="badge">Al Jazeera</span><span class="badge">CNN</span><span class="badge">The Guardian</span><span class="badge">France24</span><span class="badge">Deutsche Welle</span><span class="badge">Politico</span><span class="badge">Axios</span><span class="badge">Times of Israel</span><span class="badge">Euronews</span><span class="badge">TechCrunch</span><span class="badge">MIT Tech Review</span><span class="badge">Financial Times</span><div id="top-headlines" class="top-section"><h2>⭐ Top Schlagzeilen (25)</h2><div class="article">
-<h3><a href="https://apnews.com/app" target="_blank">Download the AP News Mobile Apps</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/world-series-dodgers-blue-jays-score-a9daf1f7ebdd75d5e7bf85d5e7ba22b9" target="_blank">Dodgers beat Blue Jays</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/trump-tariffs-supreme-court-foreign-policy-21337d2c11e629da3f187cdeb381d58b" target="_blank">President Donald Trump speaks during an event to announce new tariffs in the Rose Garden at the White House, on April 2, 2025, in Washington. (AP Photo/Mark Schiefelbein, File)</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/vietnam-us-hegseth-russia-c2b8d88aba0bcd173744c11e37ad936b" target="_blank">Hegseth in Vietnam to strengthen defense ties and reassure a cautious partner</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/us-military-strike-drug-smugglers-caribbean-44e98087294f015dc77e17025ecbb5e8" target="_blank">US carries out new strike in Caribbean, killing 3 alleged drug smugglers</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/world-series-game-7-top-moments-cc56abe9a3fd756c445e44ebd62c682d" target="_blank">Late homers by Miguel Rojas and Will Smith rallied the Los Angeles Dodgers past the Toronto Blue Jays 5-4 in 11 innings in one of the wildest Game 7s in World Series history.</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/ohtani-world-series-game-7-c38a0d22f01fd4d57f9dac815c363a55" target="_blank">Shohei Ohtani chased in third inning of World Series Game 7 after Bo Bichette’s 3-run HR</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/yoshinobu-yamamoto-dodgers-mvp-5c86d71ebfd8544a75a6bc526df9b8c9" target="_blank">Yamamoto completes outstanding October with Game 7 heroics, World Series MVP</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/detroit-michigan-halloween-terror-plot-fbi-patel-d4758edbde0b18c19ca7b38f9e836904" target="_blank">Michigan lawyer says a Halloween terror plot that FBI Director Kash Patel described never existed</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/ap-top-25-poll-93226f4e8abde7afec0c18f415ff7c85" target="_blank">AP Top 25 poll preview: Top 10 is set to get shuffled after Georgia Tech, Vandy and Miami go down</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/halloween-heidi-klum-janelle-monae-costumes-2b82de6cdb331882091f0998dc097adf" target="_blank">Heidi Klum reveals her much-anticipated 2025 Halloween costume</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/daylight-saving-time-health-effects-body-b67f3f0c00774851514c7fc80913c7c4" target="_blank">Here’s what happens to your body when clocks ‘fall back’ an hour</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/las-vegas-tesla-cybertruck-police-metro-f8294c00635009a78fa8a86741eec2ca" target="_blank">Nation’s largest fleet of police Cybertrucks to patrol Las Vegas</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/harvard-medical-explosion-boston-a72804f99ba68661eb0460ad97fcbc21" target="_blank">Explosion at Harvard Medical School appears to have been intentional, authorities say. No one hurt</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/britain-andrew-sandringham-king-charles-3ce1576fd3156112c0734755a0d5d854" target="_blank">What to know about the British king’s remote private estate that will be Andrew’s new home</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/mexico-store-fire-explosion-hermosillo-9d4f7ead04fbfaa435ff77cb0c1e3768" target="_blank">Fire and explosion at store in northwestern Mexico leave at least 23 dead and a dozen injured</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/video/egypt-unveils-a-huge-new-museum-dedicated-to-its-ancient-civilization-38f765c4770a4bf4bb34ec14eac0d22f" target="_blank">Egypt unveils a huge new museum dedicated to its ancient civilization</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/video/nasa-takes-one-step-closer-to-launching-quiet-supersonic-jets-e10f15f915c5474292095ad52e39dde6" target="_blank">NASA takes one step closer to launching quiet supersonic jets</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/video/heres-what-happens-to-your-body-when-clocks-fall-back-an-hour-on-sunday-3d177c44687b446cab096a9ffaf79328" target="_blank">Here’s what happens to your body as clocks ‘fall back’ an hour</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c0mxxm49jggo" target="_blank">Fire at shop in Mexico kills 23, officials say</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c3rjjdvx5r5o" target="_blank">New Yorkers could pick a political newcomer to run their city - and take on Trump</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c4gjjyvg1nqo" target="_blank">Shein accused of selling childlike sex dolls in France</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c1d0066ew7lo" target="_blank">Trump remodels Lincoln bathroom in latest White House renovation</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/cvgkk1mkg0po" target="_blank">Two more charged over Louvre jewellery heist</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/cm2ww0e0jewo" target="_blank">Tanzania president wins election as hundreds feared dead in unrest</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div></div><div class="stats"><strong>116</strong> thematische Artikel</div><div id="ki" class="topic"><h2>KI und Rechenzentren<span class="count">70</span></h2><div class="article">
-<h3><a href="https://apnews.com/article/britain-train-stabbings-victims-investigation-2493176af723564c142fb5b9f1e9a10c" target="_blank">UK train stabbing attack</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/nigeria-christian-genocide-trump-9e09e52e33e7efe2d2d27360d3695ef5" target="_blank">Trump threatens Nigeria with potential military action and escalates claim of Christian persecution</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/government-shutdown-heating-assistance-liheap-winter-7bcec80a167bd01f442d6dabe1149b71" target="_blank">Government shutdown threatens to delay home heating aid for millions of low-income families</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/uk-train-stabbings-what-to-know-b167cc0b87ae4d442dbe9bafd6966b62" target="_blank">What to know about a stabbing attack aboard a train in Britain</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/article/hurricane-melissa-farmers-jamaica-cuba-haiti-wfp-880f6182c6054f8b65a34872d9e211cc" target="_blank">Hurricane Melissa deals another heavy blow to Jamaica’s farmers and fishers</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://apnews.com/video/billie-eilish-if-youre-a-billionaire-why-are-you-a-billionaire-177d03773a0a4250958a3e6e62e3de7a" target="_blank">Billie Eilish: ‘If you’re a billionaire, why are you a billionaire?’</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c1e34p92q0vo" target="_blank">Hurricane Melissa death toll rises to 28 in Jamaica</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/cev18jy21w7o" target="_blank">Trump tells military to prepare for 'action' against Islamist militants in Nigeria</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/ckgkk841r4eo" target="_blank">Anger lingers in Serbia a year after train station tragedy</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c20eeqn2qlyo" target="_blank">Kenyan landslide kills 21 after heavy rainfall</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/videos/c6299nrj76yo" target="_blank">Masked agents, tear gas, and raids: the tactics used in Trump's deportation drive</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/videos/ced65d0gl2eo" target="_blank">Watch: Train smashes into truck at Dutch level crossing</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/videos/c4gj9j66wxno" target="_blank">'Everything's gone' - BBC finally able to access one of Jamaica's worst-hit areas</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/videos/cdx4qpdvjjko" target="_blank">'Give your money away,' Billie Eilish tells billionaires</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/11/2/uk-police-say-multiple-people-stabbed-on-train-two-suspects-arrested" target="_blank">UK police say ‘multiple people’ stabbed on train, two suspects arrested</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/longform/2025/10/31/threatened-with-ice-raids-us-groups-consider-cancelling-dia-de-los-muertos" target="_blank">Threatened with ICE raids, US groups consider cancelling Dia de los Muertos</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/longform/2025/10/30/zohran-mamdani-supporters-make-final-campaign-push-why-him-why-now" target="_blank">Zohran Mamdani supporters make final campaign push: Why him, why now?</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/02/uk/uk-train-attack-terror-motive-intl-gbr" target="_blank">Police rule out terrorism in UK train stabbing attack, after two British-born suspects arrested</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/01/uk/stabbing-huntingdon-train-england-latam-intl" target="_blank">Nine people suffer life-threatening injuries in UK after train stabbing attack</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/31/asia/us-japan-trump-takaichi-analysis-intl-hnk" target="_blank">In Tokyo, Trump and Takaichi bonded over a mutual friend – and a mutual enemy</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/30/americas/jamaica-hurricane-melissa-black-river-latam-intl" target="_blank">‘Hell on Earth’: Ravaged by Hurricane Melissa, this once-vibrant Jamaican town is now in desperate need of help</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/02/world/video/england-train-stabbing-digvid" target="_blank">Two suspects arrested after multiple people stabbed on UK train</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/01/world/video/jamaica-recovers-hurricane-melissa-sean-paul-intv-nrtf" target="_blank">Musician Sean Paul makes urgent plea to previous visitors to Jamaica</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/31/uk/salem-britain-witches-pardon-campaign-scli-intl" target="_blank">Salem’s witches were pardoned, but Britain’s weren’t. There’s now a movement to change that</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/29/americas/hurricane-melissa-damage-jamaica-cuba-latam-intl" target="_blank">Hurricane Melissa leaves a trail of devastation after tearing through the Caribbean</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/29/americas/pictures-devastating-aftermath-hurricane-melissa-jamaica-latam-intl" target="_blank">Hurricane Melissa devastates Jamaica: in pictures</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/28/americas/brazil-police-raid-rio-de-janeiro-latam-intl" target="_blank">Largest ever police raid in Rio de Janeiro leaves at least 132 dead, public defender’s office says</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/mountain-climbing-to-combat-war-trauma/video-74585654" target="_blank">Mountain climbing to combat war trauma</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/uk-police-arrest-2-men-after-mass-stabbing-on-train/a-74587991" target="_blank">UK: Police arrest 2 men after mass stabbing on train</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/kenya-landslide-kills-at-least-21-after-heavy-rains/a-74587337" target="_blank">Kenya: Landslide kills at least 21 after heavy rains</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/sudan-witnesses-video-detail-rsf-atrocities-in-el-fasher/video-74561039" target="_blank">Sudan: Witnesses, video detail RSF atrocities in el-Fasher</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/will-german-schools-train-students-for-war-and-disasters/a-74571164" target="_blank">Will German schools train students for war and disasters?</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/signup/" target="_blank">Get The Daily Edition</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/the-daily-edition/" target="_blank">The Daily EditionWhat Matters Most Today</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/liveblog-november-2-2025/" target="_blank">AG reject’s Levin’s ‘unlawful’ effort to bar her from investigating military leak affair</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/liveblog_entry/knesset-committee-again-delays-hearing-on-ultra-orthodox-draft-exemptions-bill/" target="_blank">Knesset committee again delays hearing on ultra-Orthodox draft exemptions bill</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/liveblog_entry/defendants-in-sde-teiman-abuse-case-say-video-leak-means-they-cant-get-a-fair-trial/" target="_blank">Defendants in Sde Teiman abuse case say video leak means they can't get a fair trial</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/liveblog-november-01-2025/" target="_blank">Nov. 1: Yair Golan: Echoes of shots that killed Rabin ‘still resonate’ in government’s actions</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/my-europe/europe-decoded/the-cube" target="_blank">The CubeThe Cube is a team of specialist social media journalists who find, verify and debunk the biggest stories in real-time. They are on a mission to make sense of what is going on and explain why it matters to you.</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/my-europe/my-europe-series/brussels-my-love" target="_blank">Brussels, My Love?From the economy to the climate and the EU's role in world affairs, this talk show sheds light on European affairs and the issues that impact on our daily lives as Europeans. Tune in to understand the ins and outs of European politics.</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/tag/artificial-intelligence" target="_blank">Artificial intelligence</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/green/green-series/climate-now" target="_blank">Climate NowWe give you the latest climate facts from the world’s leading source, analyse the trends and explain how our planet is changing. We meet the experts on the front line of climate change who explore new strategies to mitigate and adapt.</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/partnercontent/pmo/expo-2025/EN-index.html" target="_blank">Expo 2025 Osaka, Kansai, Japan</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/category/media-entertainment/" target="_blank">Media & Entertainment</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/11/01/ai-researchers-embodied-an-llm-into-a-robot-and-it-started-channeling-robin-williams/" target="_blank">AI researchers ’embodied’ an LLM into a robot – and it started channeling Robin Williams</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/11/01/rising-energy-prices-put-ai-and-data-centers-in-the-crosshairs/" target="_blank">Rising energy prices put AI and data centers in the crosshairs</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/31/ai-mania-tanks-coreweaves-core-scientific-acquisition-it-buys-python-notebook-marimo/" target="_blank">AI mania tanks CoreWeave’s Core Scientific acquisition — it buys Python notebook Marimo</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/31/chatgpt-everything-to-know-about-the-ai-chatbot/" target="_blank">ChatGPT: Everything you need to know about the AI-powered chatbot</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/29/grammarly-rebrands-to-superhuman-launches-a-new-ai-assistant/" target="_blank">Grammarly rebrands to ‘Superhuman,’ launches a new AI assistant</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/27/openai-offers-free-chatgpt-go-for-one-year-to-all-users-in-india/" target="_blank">OpenAI offers free ChatGPT Go for one year to all users in India</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/27/openai-says-over-a-million-people-talk-to-chatgpt-about-suicide-weekly/" target="_blank">OpenAI says over a million people talk to ChatGPT about suicide weekly</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/28/super-teacher-is-building-an-ai-tutor-for-elementary-schools-catch-it-at-disrupt-2025/" target="_blank">Super Teacher is building an AI tutor for elementary schools — catch it at Disrupt 2025</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/podcast/equity-live-from-300m-seed-rounds-to-data-center-builds-ai-is-feeling-bubbly/" target="_blank">Equity Live: From $300M seed rounds to data center builds, AI is feeling bubbly</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/" target="_blank">Nvidia is reportedly investing up to $1B in Poolside</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 TechCrunch</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank">Artificial intelligence</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2025/09/24/1123915/relationship-ai-without-seeking-it/" target="_blank">It’s surprisingly easy to stumble into a relationship with an AI chatbot</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2025/09/25/1124005/ai-wikipedia-vulnerable-languages-doom-spiral/" target="_blank">How AI and Wikipedia have sent vulnerable languages into a doom spiral</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2025/09/12/1123562/how-do-ai-models-generate-videos/" target="_blank">How do AI models generate videos?</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2025/03/27/1113919/what-is-signal-the-messaging-app-explained/" target="_blank">What is Signal? The messaging app, explained.</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2024/07/17/1095019/google-amazon-and-the-problem-with-big-techs-climate-claims/" target="_blank">Google, Amazon and the problem with Big Tech’s climate claims</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2024/06/18/1093440/what-causes-ai-hallucinate-chatbots/" target="_blank">Why does AI hallucinate?</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.technologyreview.com/2024/05/31/1093019/why-are-googles-ai-overviews-results-so-bad/" target="_blank">Why Google’s AI Overviews gets things wrong</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 MIT Tech Review</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/#site-content" target="_blank">Skip to main content</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/content/b8240a58-8b1b-46be-b31c-2b6b1d2731ea" target="_blank">Two arrested after mass stabbing on train in Cambridgeshire</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/content/91002071-7874-4cb7-9245-08ca0571c408" target="_blank">The new hot job in AI: forward-deployed engineers</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/artificial-intelligence" target="_blank">Artificial intelligence</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/content/b78abb32-223a-45b2-a999-133e4273aa52" target="_blank">US stocks ride AI hype and trade truce to 6-month winning streak</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/content/82f63f23-db20-4f6c-84f1-e7b45ca09f46" target="_blank">Credit market hit with $200bn ‘flood’ of AI-related issuance</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/content/74ab3b1a-30a9-4414-bc88-11af3bc0149c" target="_blank">From AI to Taylor Swift — case studies drawing lessons from life</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div><div class="article">
-<h3><a href="https://www.ft.com/content/4340e9a8-783f-46f3-86c8-78fa36f3dd36" target="_blank">Getting the measure of business research downloads — and the rise of AI</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Financial Times</div>
-</div></div><div id="gaza" class="topic"><h2>Gaza Krieg<span class="count">31</span></h2><div class="article">
-<h3><a href="https://apnews.com/article/republicans-antisemitism-carlson-fuentes-031ff4ffd7c50f725dde2d3a8085ced6" target="_blank">Republican Jewish leaders planned a ceasefire celebration, pivoted to take on antisemitism within</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 AP News</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid" target="_blank">People return to concrete wasteland as Israel blocks Gaza rebuilding effort</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4077295" target="_blank">Palestinians face worsening conditions in Israel’s Megiddo Prison</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4077267" target="_blank">Israel’s defence minister to meet army chief over new military prosecutor appointment</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4076816" target="_blank">Opposition leader says ‘Israel does not behave that way’ over rape video</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4077252" target="_blank">Any genuine political process ‘must integrate all Palestinian territories’: Palestine’s foreign minister</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/11/2/israeli-air-strike-kills-four-in-lebanon-straining-fragile-ceasefire" target="_blank">Israeli air strike kills four in Lebanon, straining fragile ceasefire</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/gallery/2025/11/2/week-in-pictures-from-israeli-strikes-in-gaza-to-floods-in-vietnam" target="_blank">Week in pictures: From Israeli strikes in Gaza to floods in Vietnam</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/11/1/why-has-the-israeli-armys-top-lawyer-resigned-after-leaking-rape-evidence" target="_blank">Why has the Israeli army’s top lawyer resigned after leaking rape evidence?</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/11/1/iran-grapples-over-social-freedoms-after-war-with-israel" target="_blank">Iran grapples over social freedoms after war with Israel</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/opinions/2025/11/1/rebuilding-gaza-begins-in-the-classroom" target="_blank">Rebuilding Gaza begins in the classroom</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/10/31/spinning-genocide-why-is-israel-trying-to-reframe-its-war-on-gaza" target="_blank">Spinning genocide: Why is Israel trying to reframe its war on Gaza?</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/02/middleeast/motaz-azaizas-gaza-war-intl" target="_blank">Motaz Azaiza’s photos from Gaza showed the heartbreak of war. Now in the US, he’s looking for a way forward</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/gaza-israel-isf-trump-plan-ceasefire-cnn" target="_blank">US allies await answers before committing to Trump’s Gaza peace force</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/30/middleeast/israel-receives-remains-hostages-gaza-intl-latam" target="_blank">Israel receives remains of two deceased hostages held in Gaza</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/30/middleeast/palestinian-american-teenager-remains-in-israeli-jail-intl" target="_blank">Palestinian American teenager to remain in Israeli jail despite growing pressure in Congress for his release</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/29/middleeast/analysis-gaza-ceasefire-israel-strikes-new-normal-latam-intl" target="_blank">Gaza’s new normal is a truce without peace</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/28/middleeast/israel-military-strikes-gaza-latam-intl" target="_blank">Deadliest day in Gaza since ceasefire as Israel launches wave of strikes, accusing Hamas of breaching truce</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/tech-israel-edition/" target="_blank">Tech IsraelUpdates from Silicon Wadi</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/real-estate-israel-edition/" target="_blank">Real Estate IsraelMonthly Update</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/about/" target="_blank">About The Times of Israel</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/advertise/" target="_blank">Advertise on The Times of Israel</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/liveblog_entry/netnayahu-says-there-are-two-pockets-of-hamas-forces-behind-israeli-lines-in-gaza-vows-to-eliminate-them/" target="_blank">Netanyahu says there are two pockets of Hamas forces behind Israeli lines in Gaza, vows to eliminate them</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/us-looks-to-build-new-gaza-on-half-of-strip-under-idf-control-but-faces-pushback/" target="_blank">US looks to build ‘new Gaza’ on half of Strip under IDF control, but faces pushback</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/jordan-germany-say-gazas-international-stabilization-force-will-need-un-mandate/" target="_blank">Jordan, Germany say Gaza’s International Stabilization Force will need UN mandate</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/pa-premier-says-ramallah-best-placed-to-lead-postwar-gaza-despite-israeli-obstacles/" target="_blank">PA premier says Ramallah best placed to lead postwar Gaza, despite Israeli obstacles</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/netanyahu-israel-will-disarm-hamas-and-demilitarize-gaza-if-foreign-troops-dont/" target="_blank">Netanyahu: Israel will disarm Hamas and demilitarize Gaza if foreign troops don’t</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/visiting-us-israeli-ceasefire-hq-netanyahu-vows-joint-effort-to-ensure-hamas-disarmament/" target="_blank">Visiting US-Israeli ceasefire HQ, Netanyahu vows ‘joint effort’ to ensure Hamas disarmed</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/ahead-of-rabin-memorial-rally-son-says-israeli-leaders-reignite-hatred-and-division/" target="_blank">Ahead of Rabin memorial rally, son says Israeli leaders reignite hatred and division</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/bereaved-families-freed-hostages-demand-state-inquiry-return-of-11-dead-captives/" target="_blank">Bereaved families, freed hostages demand state inquiry and return of 11 dead captives</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div><div class="article">
-<h3><a href="https://www.timesofisrael.com/the-16-hostages-whose-bodies-are-still-held-in-gaza/" target="_blank">The 11 hostages whose bodies are still held in Gaza</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Times of Israel</div>
-</div></div><div id="ukraine" class="topic"><h2>Ukraine Krieg<span class="count">12</span></h2><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/crklljyx6mzo" target="_blank">Key town faces 'multi-thousand' Russian force, top Ukraine commander admits</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.bbc.com/news/articles/c201xe61x0lo" target="_blank">Young Russians are being seduced by a cheap, dangerous weight-loss pill called Molecule</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 BBC News</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/11/2/ukrainian-children-among-victims-of-deadly-russian-missile-attacks" target="_blank">Ukraine says 9 people, including children, killed in Russian attacks</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://www.aljazeera.com/news/2025/11/2/russia-ukraine-war-list-of-key-events-day-1347" target="_blank">Russia-Ukraine war: List of key events, day 1,347</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Al Jazeera</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/10/31/world/video/chinese-trump-impersonator-ryan-chen-chongqing-mike-valerio-digvid" target="_blank">Meet China’s viral Trump impersonator</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/01/europe/ukraine-pokrovsk-russia-fighting-intl" target="_blank">Fighting intensifies around key town in Ukraine amid fresh attacks on Russian energy</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/why-young-ukrainian-men-are-coming-to-germany/a-74562374" target="_blank">Why young Ukrainian men are coming to Germany</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/ukraine-russia-targets-energy-grid-thousands-without-power/live-74589643" target="_blank">Ukraine: Russia targets energy grid, thousands without power</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/exiled-russian-founders-build-new-startups-across-europe/a-74551629" target="_blank">Exiled Russian founders build new startups across Europe</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/ngos-seek-support-for-political-prisoners-in-russia/a-74586173" target="_blank">NGOs seek support for political prisoners in Russia</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/2025/11/02/ukraines-energy-sector-again-target-of-overnight-russian-strikes" target="_blank">Ukraine's energy sector again target of overnight Russian strikes</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/video/2025/11/02/russia-launches-new-nuclear-submarine-khabarovsk" target="_blank">Russia launches new nuclear submarine ‘Khabarovsk’</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div></div><div id="deutschland" class="topic"><h2>Deutschland<span class="count">3</span></h2><div class="article">
-<h3><a href="https://edition.cnn.com/2025/11/02/europe/italian-alps-avalanche-intl" target="_blank">Five German climbers killed in Italian Alps avalanche</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 CNN</div>
-</div><div class="article">
-<h3><a href="https://www.dw.com/en/germany-news-italy-avalanche-kills-climbers-bodies-found/live-74582023" target="_blank">Germany news: Italy avalanche kills climbers, bodies found</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Deutsche Welle</div>
-</div><div class="article">
-<h3><a href="https://www.euronews.com/2025/11/02/five-german-nationals-killed-avalanche-in-italys-south-tyrol-province" target="_blank">Five German nationals killed in avalanche in Italy</a><span class="fresh">NEU</span></h3>
-<div class="meta">📡 Euronews</div>
-</div></div><a href="#top" class="back-to-top">↑ Nach oben</a>
-<div style="margin-top:50px;padding-top:20px;border-top:2px solid #e0e0e0;text-align:center;color:#7f8c8d">
-<p><strong>15 internationale Quellen</strong> • Verbessertes Web-Scraping • Täglich aktualisiert um 7:00 Uhr</p>
-</div></div></body></html>
+<div class="sources"><span class="badge">AP News</span><span class="badge">Reuters</span><span class="badge">BBC News</span><span class="badge">Al Jazeera</span><span class="badge">CNN</span><span class="badge">The Guardian</span><span class="badge">France24</span><span class="badge">Deutsche Welle</span><span class="badge">Politico</span><span class="badge">Axios</span><span class="badge">Times of Israel</span><span class="badge">Euronews</span><span class="badge">TechCrunch</span><span class="badge">MIT Tech Review</span><span class="badge">Financial Times</span></div><div id="top-headlines" class="top-section"><h2>⭐ Top Schlagzeilen (25)</h2><div class="article"><h3><a href="https://apnews.com/app" target="_blank">Download the AP News Mobile Apps</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/world-series-dodgers-blue-jays-score-a9daf1f7ebdd75d5e7bf85d5e7ba22b9" target="_blank">Dodgers beat Blue Jays</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/trump-tariffs-supreme-court-foreign-policy-21337d2c11e629da3f187cdeb381d58b" target="_blank">President Donald Trump speaks during an event to announce new tariffs in the Rose Garden at the White House, on April 2, 2025, in Washington. (AP Photo/Mark Schiefelbein, File)</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/vietnam-us-hegseth-russia-c2b8d88aba0bcd173744c11e37ad936b" target="_blank">Hegseth in Vietnam to strengthen defense ties and reassure a cautious partner</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/us-military-strike-drug-smugglers-caribbean-44e98087294f015dc77e17025ecbb5e8" target="_blank">US carries out new strike in Caribbean, killing 3 alleged drug smugglers</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/world-series-game-7-top-moments-cc56abe9a3fd756c445e44ebd62c682d" target="_blank">Late homers by Miguel Rojas and Will Smith rallied the Los Angeles Dodgers past the Toronto Blue Jays 5-4 in 11 innings in one of the wildest Game 7s in World Series history.</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/ohtani-world-series-game-7-c38a0d22f01fd4d57f9dac815c363a55" target="_blank">Shohei Ohtani chased in third inning of World Series Game 7 after Bo Bichette’s 3-run HR</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/yoshinobu-yamamoto-dodgers-mvp-5c86d71ebfd8544a75a6bc526df9b8c9" target="_blank">Yamamoto completes outstanding October with Game 7 heroics, World Series MVP</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/detroit-michigan-halloween-terror-plot-fbi-patel-d4758edbde0b18c19ca7b38f9e836904" target="_blank">Michigan lawyer says a Halloween terror plot that FBI Director Kash Patel described never existed</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/white-house-media-east-wing-renovation-donors-b019e9077c60a3adbdd2037cc3c49270" target="_blank">East Wing ballroom donations by corporate owners create awkward moments for news outlets</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/ap-top-25-poll-93226f4e8abde7afec0c18f415ff7c85" target="_blank">AP Top 25 poll preview: Top 10 is set to get shuffled after Georgia Tech, Vandy and Miami go down</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/wellness-urban-walking-cities-ae7c613234590d1cde93ed9793c623a3" target="_blank">Nature walks are good for you, but can a city stroll be just as good?</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/daylight-saving-time-health-effects-body-b67f3f0c00774851514c7fc80913c7c4" target="_blank">Here’s what happens to your body when clocks ‘fall back’ an hour</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/las-vegas-tesla-cybertruck-police-metro-f8294c00635009a78fa8a86741eec2ca" target="_blank">Nation’s largest fleet of police Cybertrucks to patrol Las Vegas</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/harvard-medical-explosion-boston-a72804f99ba68661eb0460ad97fcbc21" target="_blank">Explosion at Harvard Medical School appears to have been intentional, authorities say. No one hurt</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/britain-andrew-sandringham-king-charles-3ce1576fd3156112c0734755a0d5d854" target="_blank">What to know about the British king’s remote private estate that will be Andrew’s new home</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/italy-venice-souls-day-san-michele-0b9a63477a39a2863e6803494e6a1d45" target="_blank">Venice revives a quarter-mile floating bridge to island cemetery for All Souls’ Day mourners</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/video/egypt-unveils-a-huge-new-museum-dedicated-to-its-ancient-civilization-38f765c4770a4bf4bb34ec14eac0d22f" target="_blank">Egypt unveils a huge new museum dedicated to its ancient civilization</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/video/nasa-takes-one-step-closer-to-launching-quiet-supersonic-jets-e10f15f915c5474292095ad52e39dde6" target="_blank">NASA takes one step closer to launching quiet supersonic jets</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/video/heres-what-happens-to-your-body-when-clocks-fall-back-an-hour-on-sunday-3d177c44687b446cab096a9ffaf79328" target="_blank">Here’s what happens to your body as clocks ‘fall back’ an hour</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/cn401vzjx48o" target="_blank">Three killed in latest US strike on alleged drug boat in Caribbean</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/c0mxxm49jggo" target="_blank">Fire at shop in Mexico kills 23, officials say</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/c3rjjdvx5r5o" target="_blank">New Yorkers could pick a political newcomer to run their city - and take on Trump</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/cy5qgy93w9go" target="_blank">China to ease chip export ban in new trade deal, White House says</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/c4gjjyvg1nqo" target="_blank">Shein accused of selling childlike sex dolls in France</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div></div><div class="stats"><strong>128</strong> thematische Artikel</div><div id="ki" class="topic"><h2>KI und Rechenzentren<span class="count">73</span></h2><div class="article"><h3><a href="https://apnews.com/article/britain-train-stabbings-victims-investigation-2493176af723564c142fb5b9f1e9a10c" target="_blank">UK train stabbing attack</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/nigeria-christian-genocide-trump-9e09e52e33e7efe2d2d27360d3695ef5" target="_blank">Trump threatens Nigeria with potential military action and escalates claim of Christian persecution</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/shutdown-snap-benefits-food-assistance-stigma-race-4bf5074c920e601e80e931cb5a22a784" target="_blank">The end of federal food aid could hit Black Americans hardest</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/uk-train-stabbings-what-to-know-b167cc0b87ae4d442dbe9bafd6966b62" target="_blank">What to know about a stabbing attack aboard a train in Britain</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/article/udio-universal-music-settlement-ai-song-downloads-774138b81d73f0652fcd1c19af165057" target="_blank">AI song generator Udio offers brief window for downloads after Universal settlement upsets users</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://apnews.com/video/billie-eilish-if-youre-a-billionaire-why-are-you-a-billionaire-177d03773a0a4250958a3e6e62e3de7a" target="_blank">Billie Eilish: ‘If you’re a billionaire, why are you a billionaire?’</a><span class="fresh">NEU</span></h3><div class="meta">📡 AP News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/c1e34p92q0vo" target="_blank">Hurricane Melissa death toll rises to 28 in Jamaica</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/cev18jy21w7o" target="_blank">Trump tells military to prepare for 'action' against Islamist militants in Nigeria</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/ckgkk841r4eo" target="_blank">Anger lingers in Serbia a year after train station tragedy</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/c20eeqn2qlyo" target="_blank">Kenyan landslide kills 21 after heavy rainfall</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/videos/c6299nrj76yo" target="_blank">Masked agents, tear gas, and raids: the tactics used in Trump's deportation drive</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/videos/ced65d0gl2eo" target="_blank">Watch: Train smashes into truck at Dutch level crossing</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/videos/c4gj9j66wxno" target="_blank">'Everything's gone' - BBC finally able to access one of Jamaica's worst-hit areas</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/videos/cdx4qpdvjjko" target="_blank">'Give your money away,' Billie Eilish tells billionaires</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/11/2/uk-police-say-multiple-people-stabbed-on-train-two-suspects-arrested" target="_blank">UK police say train stabbing attack not ‘terrorism’, two suspects arrested</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/longform/2025/10/31/threatened-with-ice-raids-us-groups-consider-cancelling-dia-de-los-muertos" target="_blank">Threatened with ICE raids, US groups consider cancelling Dia de los Muertos</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/longform/2025/10/30/zohran-mamdani-supporters-make-final-campaign-push-why-him-why-now" target="_blank">Zohran Mamdani supporters make final campaign push: Why him, why now?</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/11/02/uk/uk-train-attack-wwk-intl-gbr" target="_blank">UK train stabbing attack leaves two people fighting for their lives. Here’s what we know</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/11/01/uk/stabbing-huntingdon-train-england-latam-intl" target="_blank">Nine people suffer life-threatening injuries in UK after train stabbing attack</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/31/asia/us-japan-trump-takaichi-analysis-intl-hnk" target="_blank">In Tokyo, Trump and Takaichi bonded over a mutual friend – and a mutual enemy</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/30/americas/jamaica-hurricane-melissa-black-river-latam-intl" target="_blank">‘Hell on Earth’: Ravaged by Hurricane Melissa, this once-vibrant Jamaican town is now in desperate need of help</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/11/02/world/video/england-train-stabbing-digvid" target="_blank">Two suspects arrested after multiple people stabbed on UK train</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/11/01/world/video/jamaica-recovers-hurricane-melissa-sean-paul-intv-nrtf" target="_blank">Musician Sean Paul makes urgent plea to previous visitors to Jamaica</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/31/uk/salem-britain-witches-pardon-campaign-scli-intl" target="_blank">Salem’s witches were pardoned, but Britain’s weren’t. There’s now a movement to change that</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/29/americas/hurricane-melissa-damage-jamaica-cuba-latam-intl" target="_blank">Hurricane Melissa leaves a trail of devastation after tearing through the Caribbean</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/29/americas/pictures-devastating-aftermath-hurricane-melissa-jamaica-latam-intl" target="_blank">Hurricane Melissa devastates Jamaica: in pictures</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/28/americas/brazil-police-raid-rio-de-janeiro-latam-intl" target="_blank">Largest ever police raid in Rio de Janeiro leaves at least 132 dead, public defender’s office says</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://www.france24.com/#main-content" target="_blank">Skip to main content</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/france/20251102-on-the-trail-of-migrant-smugglers-2-3-shipwreck-survivor-to-stand-trial-for-involuntary-homicide" target="_blank">On the trail of migrant smugglers 2/3: Shipwreck survivor to stand trial for involuntary homicide</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/europe/20251101-on-the-trail-of-migrant-smugglers-1-3-the-fall-of-calais-trafficker-idrees-g" target="_blank">On the trail of migrant smugglers 1/3: The fall of Calais trafficker Idrees G.</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/live-news/20251102-uk-police-arrest-two-after-multiple-people-stabbed-on-train" target="_blank">Police say UK train stabbing that wounded 10 people not a 'terrorist incident'</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/tv-shows/people-profit/20251031-why-fair-trade-still-matters-when-coffee-and-cocoa-prices-are-high" target="_blank">Why fair trade still matters when coffee and cocoa prices are high</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/tv-shows/down-to-earth/20251031-could-this-french-village-disappear-erosion-eats-away-at-mont-saint-michel-coastline" target="_blank">Could this French village disappear? Erosion eats away at Mont-Saint-Michel coastline</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.dw.com/en/why-young-ukrainian-men-are-coming-to-germany/a-74562374" target="_blank">Why young Ukrainian men are coming to Germany</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/mountain-climbing-to-combat-war-trauma/video-74585654" target="_blank">Mountain climbing to combat war trauma</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/uk-police-arrest-2-men-after-mass-stabbing-on-train/a-74587991" target="_blank">UK: Police arrest 2 men after mass stabbing on train</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/kenya-landslide-kills-at-least-21-after-heavy-rains/a-74587337" target="_blank">Kenya: Landslide kills at least 21 after heavy rains</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/sudan-witnesses-video-detail-rsf-atrocities-in-el-fasher/video-74561039" target="_blank">Sudan: Witnesses, video detail RSF atrocities in el-Fasher</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/will-german-schools-train-students-for-war-and-disasters/a-74571164" target="_blank">Will German schools train students for war and disasters?</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/signup/" target="_blank">Get The Daily Edition</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/the-daily-edition/" target="_blank">The Daily EditionWhat Matters Most Today</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/liveblog-november-01-2025/" target="_blank">Nov. 1: Yair Golan: Echoes of shots that killed Rabin ‘still resonate’ in government’s actions</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.euronews.com/my-europe/europe-decoded/the-cube" target="_blank">The CubeThe Cube is a team of specialist social media journalists who find, verify and debunk the biggest stories in real-time. They are on a mission to make sense of what is going on and explain why it matters to you.</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div><div class="article"><h3><a href="https://www.euronews.com/my-europe/my-europe-series/brussels-my-love" target="_blank">Brussels, My Love?From the economy to the climate and the EU's role in world affairs, this talk show sheds light on European affairs and the issues that impact on our daily lives as Europeans. Tune in to understand the ins and outs of European politics.</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div><div class="article"><h3><a href="https://www.euronews.com/tag/artificial-intelligence" target="_blank">Artificial intelligence</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div><div class="article"><h3><a href="https://www.euronews.com/green/green-series/climate-now" target="_blank">Climate NowWe give you the latest climate facts from the world’s leading source, analyse the trends and explain how our planet is changing. We meet the experts on the front line of climate change who explore new strategies to mitigate and adapt.</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div><div class="article"><h3><a href="https://www.euronews.com/partnercontent/pmo/expo-2025/EN-index.html" target="_blank">Expo 2025 Osaka, Kansai, Japan</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div><div class="article"><h3><a href="https://techcrunch.com/category/media-entertainment/" target="_blank">Media & Entertainment</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/11/01/ai-researchers-embodied-an-llm-into-a-robot-and-it-started-channeling-robin-williams/" target="_blank">AI researchers ’embodied’ an LLM into a robot – and it started channeling Robin Williams</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/11/01/rising-energy-prices-put-ai-and-data-centers-in-the-crosshairs/" target="_blank">Rising energy prices put AI and data centers in the crosshairs</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/31/ai-mania-tanks-coreweaves-core-scientific-acquisition-it-buys-python-notebook-marimo/" target="_blank">AI mania tanks CoreWeave’s Core Scientific acquisition — it buys Python notebook Marimo</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/31/chatgpt-everything-to-know-about-the-ai-chatbot/" target="_blank">ChatGPT: Everything you need to know about the AI-powered chatbot</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/29/grammarly-rebrands-to-superhuman-launches-a-new-ai-assistant/" target="_blank">Grammarly rebrands to ‘Superhuman,’ launches a new AI assistant</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/27/openai-offers-free-chatgpt-go-for-one-year-to-all-users-in-india/" target="_blank">OpenAI offers free ChatGPT Go for one year to all users in India</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/27/openai-says-over-a-million-people-talk-to-chatgpt-about-suicide-weekly/" target="_blank">OpenAI says over a million people talk to ChatGPT about suicide weekly</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/28/super-teacher-is-building-an-ai-tutor-for-elementary-schools-catch-it-at-disrupt-2025/" target="_blank">Super Teacher is building an AI tutor for elementary schools — catch it at Disrupt 2025</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/podcast/equity-live-from-300m-seed-rounds-to-data-center-builds-ai-is-feeling-bubbly/" target="_blank">Equity Live: From $300M seed rounds to data center builds, AI is feeling bubbly</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://techcrunch.com/2025/10/30/nvidia-is-reportedly-investing-up-to-1-billion-in-poolside/" target="_blank">Nvidia is reportedly investing up to $1B in Poolside</a><span class="fresh">NEU</span></h3><div class="meta">📡 TechCrunch</div></div><div class="article"><h3><a href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank">Artificial intelligence</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2025/09/24/1123915/relationship-ai-without-seeking-it/" target="_blank">It’s surprisingly easy to stumble into a relationship with an AI chatbot</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2025/09/25/1124005/ai-wikipedia-vulnerable-languages-doom-spiral/" target="_blank">How AI and Wikipedia have sent vulnerable languages into a doom spiral</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2025/09/12/1123562/how-do-ai-models-generate-videos/" target="_blank">How do AI models generate videos?</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2025/03/27/1113919/what-is-signal-the-messaging-app-explained/" target="_blank">What is Signal? The messaging app, explained.</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2024/07/17/1095019/google-amazon-and-the-problem-with-big-techs-climate-claims/" target="_blank">Google, Amazon and the problem with Big Tech’s climate claims</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2024/06/18/1093440/what-causes-ai-hallucinate-chatbots/" target="_blank">Why does AI hallucinate?</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.technologyreview.com/2024/05/31/1093019/why-are-googles-ai-overviews-results-so-bad/" target="_blank">Why Google’s AI Overviews gets things wrong</a><span class="fresh">NEU</span></h3><div class="meta">📡 MIT Tech Review</div></div><div class="article"><h3><a href="https://www.ft.com/#site-content" target="_blank">Skip to main content</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div><div class="article"><h3><a href="https://www.ft.com/content/b8240a58-8b1b-46be-b31c-2b6b1d2731ea" target="_blank">Two arrested after mass stabbing on train in Cambridgeshire</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div><div class="article"><h3><a href="https://www.ft.com/content/91002071-7874-4cb7-9245-08ca0571c408" target="_blank">The new hot job in AI: forward-deployed engineers</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div><div class="article"><h3><a href="https://www.ft.com/content/ebad259e-222b-48c1-9312-fa33b62add31" target="_blank">Police say ‘nothing to suggest’ Cambridgeshire train stabbings were terrorism</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div><div class="article"><h3><a href="https://www.ft.com/artificial-intelligence" target="_blank">Artificial intelligence</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div><div class="article"><h3><a href="https://www.ft.com/content/b78abb32-223a-45b2-a999-133e4273aa52" target="_blank">US stocks ride AI hype and trade truce to 6-month winning streak</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div><div class="article"><h3><a href="https://www.ft.com/content/74ab3b1a-30a9-4414-bc88-11af3bc0149c" target="_blank">From AI to Taylor Swift — case studies drawing lessons from life</a><span class="fresh">NEU</span></h3><div class="meta">📡 Financial Times</div></div></div><div id="ukraine" class="topic"><h2>Ukraine Krieg<span class="count">14</span></h2><div class="article"><h3><a href="https://www.bbc.com/news/articles/crklljyx6mzo" target="_blank">Key town faces 'multi-thousand' Russian force, top Ukraine commander admits</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.bbc.com/news/articles/c201xe61x0lo" target="_blank">Young Russians are being seduced by a cheap, dangerous weight-loss pill called Molecule</a><span class="fresh">NEU</span></h3><div class="meta">📡 BBC News</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/11/2/ukrainian-children-among-victims-of-deadly-russian-missile-attacks" target="_blank">Ukraine says 9 people, including children, killed in Russian attacks</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/11/2/russia-ukraine-war-list-of-key-events-day-1347" target="_blank">Russia-Ukraine war: List of key events, day 1,347</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/31/world/video/chinese-trump-impersonator-ryan-chen-chongqing-mike-valerio-digvid" target="_blank">Meet China’s viral Trump impersonator</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/11/01/europe/ukraine-pokrovsk-russia-fighting-intl" target="_blank">Fighting intensifies around key town in Ukraine amid fresh attacks on Russian energy</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://www.france24.com/en/video/20251102-russia-fires-wave-of-drones-and-missiles-at-ukraine-at-least-6-killed" target="_blank">Russia fires wave of drones and missiles at Ukraine: At least 6 killed</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/europe/20251101-ukraine-sends-special-forces-to-pokrovsk-as-moscow-tightens-grip" target="_blank">Ukraine sends special forces to Pokrovsk as Moscow tightens grip</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/tv-shows/reporters/20251031-ukraine-s-invisible-wounds-of-war-soldiers-seek-solace-at-greece-s-mount-athos" target="_blank">Ukraine's invisible wounds of war: Soldiers seek solace at Greece's Mount Athos</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.dw.com/en/ukraine-russia-targets-energy-grid-thousands-without-power/live-74589643" target="_blank">Ukraine: Russia targets energy grid, thousands without power</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/exiled-russian-founders-build-new-startups-across-europe/a-74551629" target="_blank">Exiled Russian founders build new startups across Europe</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.dw.com/en/ngos-seek-support-for-political-prisoners-in-russia/a-74586173" target="_blank">NGOs seek support for political prisoners in Russia</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.euronews.com/tag/russia-ukraine-invasion" target="_blank">Russia's invasion of Ukraine</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div><div class="article"><h3><a href="https://www.euronews.com/2025/11/02/ukraines-energy-sector-again-target-of-overnight-russian-strikes" target="_blank">Ukraine's energy sector again target of overnight Russian strikes</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div></div><div id="gaza" class="topic"><h2>Gaza Krieg<span class="count">38</span></h2><div class="article"><h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid" target="_blank">People return to concrete wasteland as Israel blocks Gaza rebuilding effort</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4077770" target="_blank">Israel establishes new settlement outpost on Palestinian land near Jerusalem</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4076781" target="_blank">The Balfour Declaration and Israel’s takeover of Palestine</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/liveblog/2025/11/2/live-hamas-continues-search-for-captives-remains-as-israel-blocks-aid?update=4077718" target="_blank">Israel ‘structurally unwilling’ to prosecute Gaza war crimes</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/11/2/israeli-air-strike-kills-four-in-lebanon-straining-fragile-ceasefire" target="_blank">Israeli air strike kills four in Lebanon, straining fragile ceasefire</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/gallery/2025/11/2/week-in-pictures-from-israeli-strikes-in-gaza-to-floods-in-vietnam" target="_blank">Week in pictures: From Israeli strikes in Gaza to floods in Vietnam</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/11/1/why-has-the-israeli-armys-top-lawyer-resigned-after-leaking-rape-evidence" target="_blank">Why has the Israeli army’s top lawyer resigned after leaking rape evidence?</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/11/1/iran-grapples-over-social-freedoms-after-war-with-israel" target="_blank">Iran grapples over social freedoms after war with Israel</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/opinions/2025/11/1/rebuilding-gaza-begins-in-the-classroom" target="_blank">Rebuilding Gaza begins in the classroom</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://www.aljazeera.com/news/2025/10/31/spinning-genocide-why-is-israel-trying-to-reframe-its-war-on-gaza" target="_blank">Spinning genocide: Why is Israel trying to reframe its war on Gaza?</a><span class="fresh">NEU</span></h3><div class="meta">📡 Al Jazeera</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/11/02/middleeast/motaz-azaizas-gaza-war-intl" target="_blank">Motaz Azaiza’s photos from Gaza showed the heartbreak of war. Now in the US, he’s looking for a way forward</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/gaza-israel-isf-trump-plan-ceasefire-cnn" target="_blank">US allies await answers before committing to Trump’s Gaza peace force</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/30/middleeast/israel-receives-remains-hostages-gaza-intl-latam" target="_blank">Israel receives remains of two deceased hostages held in Gaza</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/30/middleeast/palestinian-american-teenager-remains-in-israeli-jail-intl" target="_blank">Palestinian American teenager to remain in Israeli jail despite growing pressure in Congress for his release</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/29/middleeast/analysis-gaza-ceasefire-israel-strikes-new-normal-latam-intl" target="_blank">Gaza’s new normal is a truce without peace</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://edition.cnn.com/2025/10/28/middleeast/israel-military-strikes-gaza-latam-intl" target="_blank">Deadliest day in Gaza since ceasefire as Israel launches wave of strikes, accusing Hamas of breaching truce</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://www.france24.com/en/middle-east/20251101-israel-says-latest-remains-returned-from-gaza-are-not-bodies-of-hostages" target="_blank">Israel says latest remains returned from Gaza are not bodies of hostages</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/middle-east/20251031-gaza-yellow-line-residents-israeli-army" target="_blank">‘Civilians can’t go home’: Gaza faces Israel’s new ‘yellow line’</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/middle-east/20251031-israel-returns-remains-of-30-palestinians-to-gaza-as-part-of-exchange-deal" target="_blank">Israel returns remains of 30 Palestinians to Gaza as part of exchange deal</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.france24.com/en/middle-east/20251024-gaza-militias-clan-wars-hamas-power-struggle-2025" target="_blank">Inside post-ceasefire Gaza: Israel-backed militias, clan wars and Hamas’s fight to survive</a><span class="fresh">NEU</span></h3><div class="meta">📡 France24</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/tech-israel-edition/" target="_blank">Tech IsraelUpdates from Silicon Wadi</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/real-estate-israel-edition/" target="_blank">Real Estate IsraelMonthly Update</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/about/" target="_blank">About The Times of Israel</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/advertise/" target="_blank">Advertise on The Times of Israel</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/liveblog-november-2-2025/" target="_blank">AG rejects Levin’s ‘unlawful’ bid to bar her from investigating IDF leak affair, he pushes back</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/liveblog_entry/former-hostage-nurit-cooper-eulogizes-her-husband-slain-captive-amiram-cooper-at-his-funeral/" target="_blank">Former hostage Nurit Cooper eulogizes her husband, slain captive Amiram Cooper, at his funeral</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/liveblog_entry/2-us-jewish-women-get-10-year-ban-from-israel-for-entering-idf-zone-to-aid-palestinian-olive-harvest/" target="_blank">2 US Jewish women get 10-year ban from Israel for entering IDF zone to aid Palestinian olive harvest</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/liveblog_entry/idf-reportedly-recalling-700-senior-officers-chinese-cars-due-to-security-fears/" target="_blank">IDF reportedly recalling 700 senior officers' Chinese cars due to security fears</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/liveblog_entry/released-hostage-bar-kuperstein-heads-home-to-holon-after-recuperation-in-hotel/" target="_blank">Released hostage Bar Kuperstein heads home to Holon after recuperation in hotel</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/us-looks-to-build-new-gaza-on-half-of-strip-under-idf-control-but-faces-pushback/" target="_blank">US looks to build ‘new Gaza’ on half of Strip under IDF control, but faces pushback</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/jordan-germany-say-gazas-international-stabilization-force-will-need-un-mandate/" target="_blank">Jordan, Germany say Gaza’s International Stabilization Force will need UN mandate</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/pa-premier-says-ramallah-best-placed-to-lead-postwar-gaza-despite-israeli-obstacles/" target="_blank">PA premier says Ramallah best placed to lead postwar Gaza, despite Israeli obstacles</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/ahead-of-rabin-memorial-rally-son-says-israeli-leaders-reignite-hatred-and-division/" target="_blank">Ahead of Rabin memorial rally, son says Israeli leaders reignite hatred and division</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/bereaved-families-freed-hostages-demand-state-inquiry-return-of-11-dead-captives/" target="_blank">Bereaved families, freed hostages demand state inquiry and return of 11 dead captives</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/the-16-hostages-whose-bodies-are-still-held-in-gaza/" target="_blank">The 11 hostages whose bodies are still held in Gaza</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/red-cross-says-it-transferred-partial-remains-of-three-bodies-from-hamas-to-israel/" target="_blank">Partial remains handed over by Hamas are not of hostages, Israeli authorities assess</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/in-first-visit-to-hostages-square-omri-miran-says-supporters-rose-up-out-of-trauma/" target="_blank">In first visit to Hostages Square, Omri Miran says supporters ‘rose up’ out of trauma</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div><div class="article"><h3><a href="https://www.timesofisrael.com/because-of-ben-gvir-freed-hostage-segev-kalfon-details-vengeful-torture-in-gaza/" target="_blank">‘Because of Ben Gvir’: Freed hostage Segev Kalfon details vengeful torture in Gaza</a><span class="fresh">NEU</span></h3><div class="meta">📡 Times of Israel</div></div></div><div id="deutschland" class="topic"><h2>Deutschland<span class="count">3</span></h2><div class="article"><h3><a href="https://edition.cnn.com/2025/11/02/europe/italian-alps-avalanche-intl" target="_blank">Five German climbers killed in Italian Alps avalanche</a><span class="fresh">NEU</span></h3><div class="meta">📡 CNN</div></div><div class="article"><h3><a href="https://www.dw.com/en/germany-news-italy-avalanche-kills-climbers-bodies-found/live-74582023" target="_blank">Germany news: Italy avalanche kills climbers, bodies found</a><span class="fresh">NEU</span></h3><div class="meta">📡 Deutsche Welle</div></div><div class="article"><h3><a href="https://www.euronews.com/2025/11/02/five-german-nationals-killed-avalanche-in-italys-south-tyrol-province" target="_blank">Five German nationals killed in avalanche in Italy</a><span class="fresh">NEU</span></h3><div class="meta">📡 Euronews</div></div></div><a href="#top" class="back-to-top">↑ Nach oben</a><footer><p><strong>15 internationale Quellen</strong></p><p>Verbessertes Web-Scraping • Täglich aktualisiert um 7:00 Uhr</p></footer></div></body></html>
