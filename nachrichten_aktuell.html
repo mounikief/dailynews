@@ -9,11 +9,14 @@
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:20px;min-height:100vh}
 .container{max-width:1200px;margin:0 auto;background:white;padding:40px;border-radius:15px;box-shadow:0 10px 40px rgba(0,0,0,0.2)}
 h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-buttons{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0;padding:20px;background:#f8f9fa;border-radius:10px}
+.nav-btn{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;transition:all 0.3s;border:none;cursor:pointer;font-size:1em}
+.nav-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,0.4)}
 .badge{display:inline-block;background:#ecf0f1;color:#7f8c8d;padding:5px 10px;border-radius:5px;font-size:0.8em;margin:5px 5px 20px 0}
-.top-section{background:#fff3cd;padding:25px;border-radius:10px;margin:30px 0;border-left:5px solid #ffc107}
+.top-section{background:#fff3cd;padding:25px;border-radius:10px;margin:30px 0;border-left:5px solid #ffc107;scroll-margin-top:20px}
 .top-section h2{color:#856404;margin-bottom:15px}
 .stats{background:#f8f9fa;padding:15px;border-radius:10px;margin:20px 0}
-.topic{margin-bottom:50px}
+.topic{margin-bottom:50px;scroll-margin-top:20px}
 .topic h2{color:#2980b9;border-bottom:3px solid #667eea;padding-bottom:10px;margin-bottom:20px}
 .article{background:#f8f9fa;padding:20px;margin:15px 0;border-radius:10px;border-left:4px solid #667eea;transition:all 0.3s}
 .article:hover{transform:translateX(5px);box-shadow:0 5px 15px rgba(102,126,234,0.3)}
@@ -23,13 +26,24 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 .meta{color:#7f8c8d;font-size:0.9em}
 .count{background:#667eea;color:white;padding:5px 15px;border-radius:20px;margin-left:10px}
 .fresh{background:#27ae60;color:white;padding:3px 10px;border-radius:5px;font-size:0.8em;margin-left:10px}
+.back-to-top{position:fixed;bottom:30px;right:30px;background:#667eea;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.3);transition:all 0.3s}
+.back-to-top:hover{background:#764ba2;transform:translateY(-3px)}
+@media (max-width:768px){.nav-buttons{flex-direction:column} .nav-btn{width:100%}}
 </style>
 </head>
 <body>
 <div class="container">
-<h1>📰 Internationale Nachrichten</h1>
-<p style="color:#7f8c8d;margin:10px 0 20px">Aktualisiert: 02.11.2025 14:04 Uhr</p>
-<span class="badge">AP News</span><span class="badge">Reuters</span><span class="badge">BBC News</span><span class="badge">Al Jazeera</span><span class="badge">CNN</span><span class="badge">The Guardian</span><span class="badge">France24</span><span class="badge">Deutsche Welle</span><span class="badge">Politico</span><span class="badge">Axios</span><span class="badge">Times of Israel</span><span class="badge">Euronews</span><span class="badge">TechCrunch</span><span class="badge">MIT Tech Review</span><span class="badge">Financial Times</span><div class="top-section"><h2>⭐ Top Schlagzeilen (25)</h2><div class="article">
+<h1 id="top">📰 Internationale Nachrichten</h1>
+<p style="color:#7f8c8d;margin:10px 0 20px">Aktualisiert: 02.11.2025 14:09 Uhr</p>
+
+<div class="nav-buttons">
+<a href="#top-headlines" class="nav-btn">⭐ Top Schlagzeilen</a>
+<a href="#gaza" class="nav-btn">🔴 Gaza Krieg</a>
+<a href="#ukraine" class="nav-btn">🔵 Ukraine Krieg</a>
+<a href="#ki" class="nav-btn">🤖 KI & Rechenzentren</a>
+<a href="#deutschland" class="nav-btn">🇩🇪 Deutschland</a>
+</div>
+<span class="badge">AP News</span><span class="badge">Reuters</span><span class="badge">BBC News</span><span class="badge">Al Jazeera</span><span class="badge">CNN</span><span class="badge">The Guardian</span><span class="badge">France24</span><span class="badge">Deutsche Welle</span><span class="badge">Politico</span><span class="badge">Axios</span><span class="badge">Times of Israel</span><span class="badge">Euronews</span><span class="badge">TechCrunch</span><span class="badge">MIT Tech Review</span><span class="badge">Financial Times</span><div id="top-headlines" class="top-section"><h2>⭐ Top Schlagzeilen (25)</h2><div class="article">
 <h3><a href="https://apnews.com/app" target="_blank">Download the AP News Mobile Apps</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 AP News</div>
 </div><div class="article">
@@ -104,7 +118,7 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 </div><div class="article">
 <h3><a href="https://www.bbc.com/news/articles/cm2ww0e0jewo" target="_blank">Tanzania president wins election as hundreds feared dead in unrest</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 BBC News</div>
-</div></div><div class="stats"><strong>116</strong> thematische Artikel</div><div class="topic"><h2>KI und Rechenzentren<span class="count">70</span></h2><div class="article">
+</div></div><div class="stats"><strong>116</strong> thematische Artikel</div><div id="ki" class="topic"><h2>KI und Rechenzentren<span class="count">70</span></h2><div class="article">
 <h3><a href="https://apnews.com/article/britain-train-stabbings-victims-investigation-2493176af723564c142fb5b9f1e9a10c" target="_blank">UK train stabbing attack</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 AP News</div>
 </div><div class="article">
@@ -314,7 +328,7 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 </div><div class="article">
 <h3><a href="https://www.ft.com/content/4340e9a8-783f-46f3-86c8-78fa36f3dd36" target="_blank">Getting the measure of business research downloads — and the rise of AI</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 Financial Times</div>
-</div></div><div class="topic"><h2>Gaza Krieg<span class="count">31</span></h2><div class="article">
+</div></div><div id="gaza" class="topic"><h2>Gaza Krieg<span class="count">31</span></h2><div class="article">
 <h3><a href="https://apnews.com/article/republicans-antisemitism-carlson-fuentes-031ff4ffd7c50f725dde2d3a8085ced6" target="_blank">Republican Jewish leaders planned a ceasefire celebration, pivoted to take on antisemitism within</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 AP News</div>
 </div><div class="article">
@@ -407,7 +421,7 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 </div><div class="article">
 <h3><a href="https://www.timesofisrael.com/the-16-hostages-whose-bodies-are-still-held-in-gaza/" target="_blank">The 11 hostages whose bodies are still held in Gaza</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 Times of Israel</div>
-</div></div><div class="topic"><h2>Ukraine Krieg<span class="count">12</span></h2><div class="article">
+</div></div><div id="ukraine" class="topic"><h2>Ukraine Krieg<span class="count">12</span></h2><div class="article">
 <h3><a href="https://www.bbc.com/news/articles/crklljyx6mzo" target="_blank">Key town faces 'multi-thousand' Russian force, top Ukraine commander admits</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 BBC News</div>
 </div><div class="article">
@@ -443,7 +457,7 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 </div><div class="article">
 <h3><a href="https://www.euronews.com/video/2025/11/02/russia-launches-new-nuclear-submarine-khabarovsk" target="_blank">Russia launches new nuclear submarine ‘Khabarovsk’</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 Euronews</div>
-</div></div><div class="topic"><h2>Deutschland<span class="count">3</span></h2><div class="article">
+</div></div><div id="deutschland" class="topic"><h2>Deutschland<span class="count">3</span></h2><div class="article">
 <h3><a href="https://edition.cnn.com/2025/11/02/europe/italian-alps-avalanche-intl" target="_blank">Five German climbers killed in Italian Alps avalanche</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 CNN</div>
 </div><div class="article">
@@ -452,6 +466,7 @@ h1{color:#2c3e50;font-size:2.5em;margin-bottom:10px;background:linear-gradient(1
 </div><div class="article">
 <h3><a href="https://www.euronews.com/2025/11/02/five-german-nationals-killed-avalanche-in-italys-south-tyrol-province" target="_blank">Five German nationals killed in avalanche in Italy</a><span class="fresh">NEU</span></h3>
 <div class="meta">📡 Euronews</div>
-</div></div><div style="margin-top:50px;padding-top:20px;border-top:2px solid #e0e0e0;text-align:center;color:#7f8c8d">
+</div></div><a href="#top" class="back-to-top">↑ Nach oben</a>
+<div style="margin-top:50px;padding-top:20px;border-top:2px solid #e0e0e0;text-align:center;color:#7f8c8d">
 <p><strong>15 internationale Quellen</strong> • Verbessertes Web-Scraping • Täglich aktualisiert um 7:00 Uhr</p>
 </div></div></body></html>
